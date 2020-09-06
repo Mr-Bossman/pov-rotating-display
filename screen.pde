@@ -1,9 +1,9 @@
 import java.lang.Math;
 PrintWriter output;
-int rings = 12*2;
+int rings = 12*6;
 int deg = 360*1;
 boolean fit = false;
-String image = "aple.jpg";
+String image = "pic.jpg";
 void setup() {
   noStroke();
   size(1000,1000);
@@ -44,15 +44,7 @@ void setup() {
        
     }
   }
-  
-  for(int d = 0; d  < deg; d++){
-    for(int r = 0; r < rings; r++){
-      
-       myPort.write((char)logscalar(rings,(char)red(buffer[d][r])));
 
-       
-    }
-  }
 
     
   /*for(int x = 0; x  < size; x++){
